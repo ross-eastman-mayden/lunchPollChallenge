@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.css" type="text/css">
+    <!--<link name="fonturl.com" rel='stylesheet' type='text/css'>-->
+</head>
+<!--bootstrap-->
+<header>
+    <div class="container">
+        <h1>Lunch Poll</h1>
+
+        <h3>Poll Creator</h3>
+    </div>
+</header>
+<body>
+<!--Use .container for a responsive fixed width container.-->
+<!--Use .container-fluid for a full width container, spanning the entire width of your viewport.-->
+<!--<div class="container-fluid">-->
+<div class="container">
+    <form method="post" action="../php/formProcessor.php">
+        <div class="form-group .col-xs-12 .col-sm-6 .col-md-8">
+            <label for="Name" class="col-sm-6 control-label">Name</label>
+
+            <input type="text" class="form-group" id="Name" placeholder="Name">
+
+        </div>
+        <div class="form-group .col-xs-12 .col-sm-6 .col-md-8">
+            <label for="Proposed-Lunch-Option" class="col-sm-6 control-label">Lunch Option</label>
+
+            <input type="text" class="form-group" id="Proposed-Lunch-Option"
+                   placeholder="Lennies, Mission etc...">
+
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+</div>
+<!--</div>-->
+</body>
+
+<footer>
+    ...
+</footer>
+
+</html>
